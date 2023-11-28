@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+    <style>
+      body {
+        background-image: url("car2.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 200px;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form>
+        <label for="username">Username:</label>
+
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me" id="remember_me" />
+          Remember me
+        </label>
+
+        <button type="button" onclick="login()">Login</button>
+        <input type="reset" onclick="reset()" />
+      </form>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

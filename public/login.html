@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Residency Status</title>
+  <style>
+   body {
+  background-image: url('car.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+input[type="radio"], button[type="submit"] {
+  padding: 10px;
+}
+
+label:hover {
+  background-color: #f0f0f0;
+}
+
+input[type="radio"], button[type="submit"] {
+  transition: all 0.3s;
+}
+
+label {
+  color: #555;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+}
+
+button[type="submit"] {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <h1><u>Residency Status</u></h1>
+  <h2>Please select your residency status:</h2>
+  <form>
+    <label>
+      <input type="radio" name="residency" value="resident">
+      Resident
+    </label>
+    <label>
+      <input type="radio" name="residency" value="non-resident">
+      Non-Resident
+    </label>
+    <button type="submit" id="submit-btn">Submit</button>
+  </form>
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Non-Resident Parking Registration</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <style>
+        body{
+  background-image: url('car1.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Non-Resident Parking Registration</h1>
+    <form action="/register" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br>
+      <label for="vehicle_model">Vehicle Model:</label>
+      <input type="text" id="vehicle_model" name="vehicle_model" required><br>
+      <label for="license_plate">License Plate:</label>
+      <input type="text" id="license_plate" name="license_plate" required><br>
+      <label for="parking_slot">Parking Slot:</label>
+      <select id="parking_slot" name="parking_slot" required>
+        <option value="" selected disabled>Select a parking slot</option>
+        <option value="A1">slot 1</option>
+        <option value="A2">slot 2</option>
+        <option value="A3">slot 3</option>
+        <option value="B1">slot 4</option>
+        <option value="B2">slot 5</option>
+        <option value="B3">slot 6</option>
+        <option value="C1">slot 7</option>
+        <option value="C2">slot 8</option>
+
+      </select><br>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br>
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required><br>
+      <input type="submit" value="Register">
+    </form>
+    <script src="login.js"></script>
+  </body>
+</html>
